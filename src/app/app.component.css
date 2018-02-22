@@ -1,0 +1,156 @@
+
+
+h1
+{
+    font-family : Courier;
+}
+
+header {
+    position: fixed;
+    top : 0;
+    left: 0;
+    right: 0;
+  }
+
+footer {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background-color: #333333;
+}
+
+.bimg
+{
+    background: url(http://finelifegroup.com/wp-content/uploads/2016/10/Transaction-support.jpg);
+    
+    background-size: 1350px 630px;
+    background-position: left top ;
+    background-repeat: no-repeat;
+    
+}
+
+.bimg:before
+{
+    content: "";
+    z-index: -1;
+    background: inherit;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    line-height: 30px;
+    font-size: 0.9em;
+    text-align: center;
+    bottom:0;
+}
+
+div
+{
+    width: 100%;
+    font-weight: bold;
+    text-align:center;
+
+}
+
+h2
+{
+    margin-top: 17%;
+    color: rgba(92, 3, 80, 0.808);
+    font-size: 40px;
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-weight : 270; 
+    opacity: 1;
+
+   /*animation : bounce .6s ;*/
+
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .09em;
+    animation: typing 3.5s steps(60,end)
+}
+
+@keyframes typing
+{
+    from{ width: 0 }
+    to{ width: 20em }
+}
+
+/*@keyframes bounce
+{
+    0%,100%{ transform: translate(0); }
+    25%{ transform: rotateX(20deg) translate(2px) rotate(-3deg); }
+    50%{ transform: translateY(-20px) rotate(3deg) scale(1.1) }
+}*/
+
+h3
+{
+    font-family: Apple Chancery, cursive ;
+    color: rgb(47, 128, 0);
+    font-size: 40px;
+}
+
+
+#myDIV {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px purple;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px purple;}
+}
+
+
+
+
+.oabout-section
+{
+    background: beige;
+}
+
+.table-section
+{
+    
+
+}
+
+.pie-section
+{
+    background : linear-gradient( skyblue ,wheat);
+
+}
+
+
+section {
+    height: 100%;
+    width: 100%;
+    display: table;
+    pointer-events: none;
+    z-index: 0; 
+    -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+    transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+  }
+
+
+  a[id= "transdetails"]:target ~ #transdetails {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+a[id= "piechart"]:target ~ #piechart {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+a[id= "about"]:target ~ #about {
+    -webkit-transform: translate3d(0, -200%, 0);
+    transform: translate3d(0, -200%, 0);
+}

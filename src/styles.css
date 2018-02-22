@@ -1,0 +1,139 @@
+/* You can add global styles to this file, and also import other style files */
+
+html{
+  scroll-behavior: smooth ;
+
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+}
+
+body {
+
+    /*background: url(http://finelifegroup.com/wp-content/uploads/2016/10/Transaction-support.jpg);
+
+
+    background-position: left top;
+    background-size: 1350px 680px;
+    background-repeat: no-repeat;*/
+    
+
+}
+
+.hop
+{
+    background : gray;
+    background-size: 550px 680px;
+}
+
+.parallax {
+    /* The image used */
+    background : linear-gradient(gray ,beige );
+    /* Full height */
+    height: 90%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+    
+
+h1
+{
+    font-family : Colonna MT Regular;
+    color: blue;
+    font-size: 50px;
+}
+
+p{
+  color: black;
+  font-family : Courier New, Courier;
+  font-size: 22px;
+  padding-top: 20px;
+}
+
+
+#mainNav {
+    font-family: Courier;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  
+  .navbar-toggler {
+    font-size: 40px;
+    color: white;
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  .navbar-nav .nav-item {
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition:background 0.3s ease-in-out;
+  }
+  
+ .navbar-nav .nav-item:hover {
+    outline: none;
+  }
+
+ .navbar-nav .nav-item:active,.navbar-nav .nav-item:focus {
+    outline: none;
+    background-color: transparent;
+  }
+  
+  @media (min-width: 992px) {
+    #mainNav {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      -moz-transition: background 0.3s ease-in-out,padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+      letter-spacing: 1px;
+      border-bottom: none;
+      background: transparent;
+    }
+    .navbar-shrink {
+      padding-top: 8px;
+      padding-bottom: 2px;
+    }
+     .nav-link.active {
+      outline: none;
+    }
+    .nav-link.active:hover {
+      color: white;
+    }
+  }
+
+/* Menu link item */
+
+section {
+  height: 100%;
+  width: 100%;
+  display: table;
+  pointer-events: none;
+  z-index: 0; 
+  -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+  transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+}
+
+a[id= "transdetails"]:target ~ #transdetails {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+a[id= "piechart"]:target ~ #piechart {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+a[id= "about"]:target ~ #about {
+  -webkit-transform: translate3d(0, -200%, 0);
+  transform: translate3d(0, -200%, 0);
+}

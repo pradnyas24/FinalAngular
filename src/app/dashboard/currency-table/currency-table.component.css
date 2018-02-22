@@ -1,0 +1,58 @@
+
+
+
+h3
+{
+    font-family: Apple Chancery, cursive ;
+    color: rgb(0, 77, 128);
+    font-size: 40px;
+}
+
+
+#myDIV {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {text-shadow: 10px 20px 30px rgb(223, 139, 14);}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {text-shadow: 10px 20px 30px rgb(216, 130, 17);}
+}
+
+table
+{
+    border-collapse: collapse ;
+    width: 80% ;
+    left: 10%;
+    right: 20%;
+    position: relative;
+}
+
+th , td
+{
+    text-align: center ;
+    padding: 9px ;
+}
+
+tr:nth-child(even)
+{
+    background-color: rgba(0, 0, 0, 0.041) ;
+    color: black ;
+}
+tr:nth-child(odd)
+{
+    background-color: rgba(0, 0, 0, 0.219) ;
+    color: black ;
+}
+
+th
+{
+    background-color: rgba(0, 0, 0, 0.842) ;
+    color: white ;
+    font-family: System ;
+}
